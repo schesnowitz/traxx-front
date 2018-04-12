@@ -33,9 +33,11 @@
   </head>
 
   <body data-spy="scroll" data-target="#header-navbar" data-offset="51">
-
+  <div id="page-container" class="fade">
     <%= render "layouts/pages/content" %>
     <%= yield %>
+  </div>
+  <!-- end #page-container -->
 
   <%= javascript_include_tag 'pages/bootstrap3/js/bootstrap.min.js', 'data-turbolinks-track': 'reload' %>
 
