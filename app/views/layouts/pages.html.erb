@@ -5,12 +5,58 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    
+    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link href="../assets/plugins/bootstrap3/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="../assets/plugins/animate/animate.min.css" rel="stylesheet" />
+    <link href="../assets/css/one-page-parallax/style.min.css" rel="stylesheet" />
+    <link href="../assets/css/one-page-parallax/style-responsive.min.css" rel="stylesheet" />
+    <link href="../assets/css/one-page-parallax/theme/default.css" id="theme" rel="stylesheet" />
+    <!-- ================== END BASE CSS STYLE ================== -->
+    
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script src="../assets/plugins/pace/pace.min.js"></script>
+
+
+
+
+
+
     <%= stylesheet_link_tag    'pages/application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'pages/application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#header-navbar" data-offset="51">
+
+    <%= render "layouts/pages/content" %>
     <%= yield %>
+
+
+    	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../assets/plugins/bootstrap3/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="assets/crossbrowserjs/respond.min.js"></script>
+		<script src="assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<script src="../assets/plugins/js-cookie/js.cookie.js"></script>
+	<script src="../assets/plugins/scrollMonitor/scrollMonitor.js"></script>
+	<script src="../assets/js/one-page-parallax/apps.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+	
+	<script>    
+	    $(document).ready(function() {
+	        App.init();
+	    });
+	</script>
   </body>
 </html>
 
