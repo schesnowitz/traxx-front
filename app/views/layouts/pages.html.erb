@@ -11,25 +11,24 @@
     <meta content="" name="description" />
     <meta content="" name="author" />
     
-    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-    <link href="../assets/plugins/bootstrap3/css/bootstrap.min.css" rel="stylesheet" />
 
-    <link href="../assets/plugins/animate/animate.min.css" rel="stylesheet" />
-    <link href="../assets/css/one-page-parallax/style.min.css" rel="stylesheet" />
-    <link href="../assets/css/one-page-parallax/style-responsive.min.css" rel="stylesheet" />
-    <link href="../assets/css/one-page-parallax/theme/default.css" id="theme" rel="stylesheet" />
-    <!-- ================== END BASE CSS STYLE ================== -->
-    
-    <!-- ================== BEGIN BASE JS ================== -->
-    <script src="../assets/plugins/pace/pace.min.js"></script>
+    <%= stylesheet_link_tag 'pages/bootstrap3/css/bootstrap.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
 
+    <%= stylesheet_link_tag 'pages/animate/animate.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+  
 
+    <%= stylesheet_link_tag 'pages/one-page-parallax/style.css', media: 'all', 'data-turbolinks-track': 'reload' %>
 
+    <%= stylesheet_link_tag 'pages/one-page-parallax/style-responsive.css', media: 'all', 'data-turbolinks-track': 'reload' %>
 
+    <%= stylesheet_link_tag 'pages/one-page-parallax/theme/default.css', media: 'all', 'data-turbolinks-track': 'reload' %>
 
+    <%= javascript_include_tag 'pages/pace/pace.min.js', 'data-turbolinks-track': 'reload' %>
 
     <%= stylesheet_link_tag    'pages/application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= javascript_include_tag 'pages/application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -38,19 +37,17 @@
     <%= render "layouts/pages/content" %>
     <%= yield %>
 
+  <%= javascript_include_tag 'pages/bootstrap3/js/bootstrap.min.js', 'data-turbolinks-track': 'reload' %>
 
-    	<!-- ================== BEGIN BASE JS ================== -->
-	<script src="../assets/plugins/jquery/jquery-3.2.1.min.js"></script>
-	<script src="../assets/plugins/bootstrap3/js/bootstrap.min.js"></script>
 	<!--[if lt IE 9]>
 		<script src="assets/crossbrowserjs/html5shiv.js"></script>
 		<script src="assets/crossbrowserjs/respond.min.js"></script>
 		<script src="assets/crossbrowserjs/excanvas.min.js"></script>
-	<![endif]-->
-	<script src="../assets/plugins/js-cookie/js.cookie.js"></script>
-	<script src="../assets/plugins/scrollMonitor/scrollMonitor.js"></script>
-	<script src="../assets/js/one-page-parallax/apps.min.js"></script>
-	<!-- ================== END BASE JS ================== -->
+  <![endif]-->
+  <%= javascript_include_tag 'pages/js-cookie/js.cookie.js', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'pages/scrollMonitor/scrollMonitor.js', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'pages/apps.js', 'data-turbolinks-track': 'reload' %>
+
 	
 	<script>    
 	    $(document).ready(function() {

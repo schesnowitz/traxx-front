@@ -8,7 +8,20 @@ Rails.application.config.assets.version = '1.0'
 # Add Yarn node_modules folder to the asset load path.
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
-# Precompile additional assets.
-# application.js, application.css, and all non-JS/CSS in the app/assets
-# folder are already added.
-# Rails.application.config.assets.precompile += %w( admin.js admin.css )
+Rails.application.config.assets.precompile += %w( pages/bootstrap3/css/bootstrap.min.css )
+
+Rails.application.config.assets.precompile += %w( pages/animate/animate.css)
+
+Rails.application.config.assets.precompile += %w( pages/one-page-parallax/style.css )
+
+Rails.application.config.assets.precompile += %w( pages/one-page-parallax/style-responsive.css )
+
+Rails.application.config.assets.precompile += %w( pages/one-page-parallax/theme/default.css )
+
+Rails.application.config.assets.precompile += %w( pages/pace/pace.min.js )
+
+Rails.application.config.assets.precompile += %w( pages/bootstrap3/js/bootstrap.min.js )
+
+Rails.application.config.assets.precompile += %w( pages/js-cookie/js.cookie.js )
+Rails.application.config.assets.precompile += %w( pages/scrollMonitor/scrollMonitor.js )
+Rails.application.config.assets.precompile += %w( pages/apps.js )
