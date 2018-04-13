@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>App</title>
+    <title><%= @app_setting.tab_name %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -16,11 +16,8 @@
 
     <%= stylesheet_link_tag 'pages/bootstrap3/css/bootstrap.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    <%= stylesheet_link_tag 'pages/font-awesome/css/font-awesome.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
-
     <%= stylesheet_link_tag 'pages/animate/animate.css', media: 'all', 'data-turbolinks-track': 'reload' %>
   
-
     <%= stylesheet_link_tag 'pages/one-page-parallax/style.css', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= stylesheet_link_tag 'pages/one-page-parallax/style-responsive.css', media: 'all', 'data-turbolinks-track': 'reload' %>

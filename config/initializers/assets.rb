@@ -9,7 +9,6 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( pages/bootstrap3/css/bootstrap.min.css )
-Rails.application.config.assets.precompile += %w( pages/font-awesome/css/font-awesome.min.css )
 Rails.application.config.assets.precompile += %w( pages/animate/animate.css)
 Rails.application.config.assets.precompile += %w( pages/one-page-parallax/style.css )
 Rails.application.config.assets.precompile += %w( pages/one-page-parallax/style-responsive.css )
