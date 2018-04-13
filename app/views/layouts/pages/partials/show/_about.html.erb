@@ -2,10 +2,10 @@
 <div id="about" class="content" data-scrollview="true">
     <!-- begin container -->
     <div class="container" data-animation="true" data-animation-type="fadeInDown">
-      <h2 class="content-title">About Us</h2>
+      <h2 class="content-title"><%= @page.about1 %></h2>
       <p class="content-desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur eros dolor,<br />
-        sed bibendum turpis luctus eget
+          <%= @page.about2 %><br />
+          <%= @page.about3 %>
       </p>
       <!-- begin row -->
       <div class="row">
@@ -13,20 +13,12 @@
         <div class="col-md-4 col-sm-6">
           <!-- begin about -->
           <div class="about">
-            <h3>Our Story</h3>
+            <h3><%= @page.about4 %></h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Vestibulum posuere augue eget ante porttitor fringilla. 
-              Aliquam laoreet, sem eu dapibus congue, velit justo ullamcorper urna, 
-              non rutrum dolor risus non sapien. Vivamus vel tincidunt quam. 
-              Donec ultrices nisl ipsum, sed elementum ex dictum nec. 
+                <%= @page.about5 %>
             </p>
             <p>
-              In non libero at orci rutrum viverra at ac felis. 
-              Curabitur a efficitur libero, eu finibus quam. 
-              Pellentesque pretium ante vitae est molestie, ut faucibus tortor commodo. 
-              Donec gravida, eros ac pretium cursus, est erat dapibus quam, 
-              sit amet dapibus nisl magna sit amet orci. 
+                <%= @page.about6 %>
             </p>
           </div>
           <!-- end about -->
@@ -34,12 +26,12 @@
         <!-- end col-4 -->
         <!-- begin col-4 -->
         <div class="col-md-4 col-sm-6">
-          <h3>Our Philosophy</h3>
+          <h3><%= @page.about7 %></h3>
           <!-- begin about-author -->
           <div class="about-author">
             <div class="quote bg-silver">
               <i class="fa fa-quote-left"></i>
-              <h3>We work harder,<br /><span>to let our user keep simple</span></h3>
+              <h3><%= @page.about8 %>,<br /><span><%= @page.about9 %></span></h3>
               <i class="fa fa-quote-right"></i>
             </div>
             <div class="author">
@@ -47,8 +39,8 @@
                 <img src="../assets/img/user/user-1.jpg" alt="Sean Ngu" />
               </div>
               <div class="info">
-                Sean Ngu
-                <small>Front End Developer</small>
+                  <%= @page.about10 %>
+                <small><%= @page.about11 %></small>
               </div>
             </div>
           </div>
@@ -57,31 +49,31 @@
         <!-- end col-4 -->
         <!-- begin col-4 -->
         <div class="col-md-4 col-sm-12">
-          <h3>Our Experience</h3>
+          <h3><%= @page.about12 %></h3>
           <!-- begin skills -->
           <div class="skills">
-            <div class="skills-name">Front End</div>
+            <div class="skills-name"><%= @page.about13 %></div>
             <div class="progress progress-striped">
-              <div class="progress-bar progress-bar-success" style="width: 95%">
-                <span class="progress-number">95%</span>
+              <div class="progress-bar progress-bar-success" style="width: <%= @page.about14 %>%">
+                <span class="progress-number"><%= @page.about14 %>%</span>
               </div>
             </div>
-            <div class="skills-name">Programming</div>
+            <div class="skills-name"><%= @page.about15 %></div>
             <div class="progress progress-striped">
-              <div class="progress-bar progress-bar-success" style="width: 90%">
-                <span class="progress-number">90%</span>
+              <div class="progress-bar progress-bar-success" style="width: <%= @page.about16 %>%">
+                <span class="progress-number"><%= @page.about16 %>%</span>
               </div>
             </div>
-            <div class="skills-name">Database Design</div>
+            <div class="skills-name"><%= @page.about17 %></div>
             <div class="progress progress-striped">
-              <div class="progress-bar progress-bar-success" style="width: 85%">
-                <span class="progress-number">85%</span>
+              <div class="progress-bar progress-bar-success" style="width: <%= @page.about18 %>%">
+                <span class="progress-number"><%= @page.about18 %>%</span>
               </div>
             </div>
-            <div class="skills-name">Wordpress</div>
+            <div class="skills-name"><%= @page.about19 %></div>
             <div class="progress progress-striped">
-              <div class="progress-bar progress-bar-success" style="width: 80%">
-                <span class="progress-number">80%</span>
+              <div class="progress-bar progress-bar-success" style="width: <%= @page.about20 %>%">
+                <span class="progress-number"><%= @page.about20 %>%</span>
               </div>
             </div>
           </div>

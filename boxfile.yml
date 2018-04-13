@@ -18,6 +18,7 @@ deploy.config:
     web.main:
       - rake db:setup_or_migrate
 
+
 data.db:
   image: nanobox/postgresql:9.5
 

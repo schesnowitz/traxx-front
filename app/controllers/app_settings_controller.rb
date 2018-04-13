@@ -1,5 +1,6 @@
 class AppSettingsController < ApplicationController
   before_action :set_app_setting, only: [:show, :edit, :update, :destroy]
+  layout "pages"
 
   # GET /app_settings
   # GET /app_settings.json
@@ -24,7 +25,7 @@ class AppSettingsController < ApplicationController
   # POST /app_settings
   # POST /app_settings.json
   def create
-    @app_setting = AppSetting.new(app_setting_params)
+    @app_setting = AppSetting.new(app_setting_params)   
 
     respond_to do |format|
       if @app_setting.save
@@ -69,6 +70,10 @@ class AppSettingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def app_setting_params
-      params.require(:app_setting).permit(:tab_name)
+      params.require(:app_setting).permit(
+        :tab_name,
+        :navbar_style
+        )
     end
 end
+ 

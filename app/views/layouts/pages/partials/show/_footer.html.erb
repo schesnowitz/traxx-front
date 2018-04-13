@@ -2,12 +2,14 @@
 <div id="footer" class="footer">
     <div class="container">
       <div class="footer-brand">
-        <div class="footer-brand-logo"></div>
-        Color Admin
+          <%= link_to root_path do %>
+          <span class=""><%= image_tag "traxx_logos/SVG/svg_logo_footer.svg" %></span>
+          
+          <% end %> 
       </div>
       <p>
-        &copy; Copyright Color Admin 2017 <br />
-        An admin & front end theme with serious impact. Created by <a href="#">SeanTheme</a>
+        &copy; Copyright <%= Time.now.strftime("%Y")%> Traxx Transport, LLC  <br />
+        Text Goes here <a href="#">Link</a>
       </p>
       <p class="social-list">
         <a href="#"><i class="fa fa-facebook fa-fw"></i></a>

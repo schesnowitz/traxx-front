@@ -1,3 +1,13 @@
 /*
  *= require_self
  */
+
+ .logo_span {
+  position: absolute;
+  left: 10px;
+  /* top: 100px; */
+  bottom: 155px;
+  width: 30px;
+  height: 10px;
+}
+
