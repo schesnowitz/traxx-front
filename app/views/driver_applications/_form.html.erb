@@ -3,47 +3,77 @@
 <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 <div class="form-inputs">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 col-md-4">
       <h3>Personal Information</h3>
-      <%= f.input :first_name %>
-      <%= f.input :last_name %>
-      <%= f.input :dob, start_year: Date.today.year - 75, end_year: Date.today.year - 23, label: "Date of Birth", prompt: "Make a selection" %>
-      <%= f.input :social, label: "Social Security Number" %>
+      <p class='turq'>First Name</p>
+      <%= f.input :first_name, label: false %>
+      <p class='turq'>Last Name</p>
+      <%= f.input :last_name, label: false %>
+      <p class='turq'>Date of Birth</p>
+      <%= f.input :dob, start_year: Date.today.year - 75, end_year: Date.today.year - 23, label: "Date of Birth", prompt: "Make a selection", label: false %>
+      <p class='turq'>Social Security Number</p>
+      <%= f.input :social, label: false %>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 col-md-4">
       <h3>Address</h3>
-      <%= f.input :street %>
-      <%= f.input :city %>
-      <%= f.input :state, collection: ApplicationRecord::StateProvence, include_blank: "Select State | Provence" %>
-      <%= f.input :postal %>
+      <p class='turq'>Street</p>
+      <%= f.input :street, label: false  %>
+      <p class='turq'>City</p>
+      <%= f.input :city, label: false  %>
+      <p class='turq'>State | Provence</p>
+      <%= f.input :state, collection: ApplicationRecord::StateProvence, include_blank: "Select State | Provence", label: false  %>
+      <p class='turq'>Postal Code</p>
+      <%= f.input :postal, label: false  %>
+            <p class='turq'>Phone</p>
+      <%= f.input :phone, label: false  %>
+      <p class='turq'>email</p>
+      <%= f.input :email, label: false  %>
     </div>
-    <div class="col-sm-4">
-      <h3>Contact</h3>
-      <%= f.input :phone %>
-      <%= f.input :email %>
+      <div class="col-sm-4 col-md-4">
+   
+
       <h3>License Information</h3>
-      <%= f.input :license_number %>
-      <%= f.input :license_image, as: :file %>
-      <%= f.input :years_experience, input_html: { min: '0', step: 'any' }, label: "Years of experience" %>
+      <p class='turq'>Drivers License Number</p>
+      <%= f.input :license_number, label: false  %>
+      <p class='turq'>License Image</p>
+      <%= f.input :license_image, as: :file, label: false  %>
+      <p class='turq'>Years of Experience</p>
+      <%= f.input :years_experience, input_html: { min: '0', step: 'any' }, label: false %>
     </div>
   </div>
+  <hr>
   <div class="row">
-    <div class="col-sm-4">
+
+
+    <div class="col-sm-4 col-md-4">
+    
       <h3> Tractor Information</h3>
-      <%= f.input :year, discard_day: true, discard_month: true, start_year: Date.today.year - 20, end_year: Date.today.year + 1, prompt: "Select Year" %>
-      <%= f.input :make %>
-      <%= f.input :model %>
-      <%= f.input :color %>
-      <%= f.input :vin %>
-      <%= f.input :mileage %>
+      <p class='turq'>Year</p>
+      <%= f.input :year, discard_day: true, discard_month: true, start_year: Date.today.year - 20, end_year: Date.today.year + 1, prompt: "Select Year", label: false %>
+      <p class='turq'>Make</p>
+      <%= f.input :make, label: false %>
+      <p class='turq'>Model</p>
+      <%= f.input :model, label: false %>
+
     </div>
-    <div class="col-sm-8">
-      <h3>Extra Information</h3>
-      <%= f.input :notes %>
+    <div class="col-sm-4 col-md-4">
+    <br><br>
+         <p class='turq'>Color</p>
+      <%= f.input :color, label: false %>
+      <p class='turq'>Vin</p>
+      <%= f.input :vin, label: false %>
+      <p class='turq'>Mileage</p>
+      <%= f.input :mileage, label: false %>
     </div>
+    <div class="col-sm-2 col-md-2">
+    </div>
+        <div class="col-sm-2 col-md-2">
+    <br><br><br>
+    <div class="form-actions">
+  <%= f.submit "Send Info", class: "btn btn-info", 'data-disable-with' => "Sending Data.." %>
   </div>
 </div>
-<div class="form-actions">
-  <%= f.submit "Send Info", class: "btn btn-info", 'data-disable-with' => "Sending Data.." %>
+  </div>
 </div>
+
 <% end %>

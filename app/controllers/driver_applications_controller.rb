@@ -15,6 +15,7 @@ class DriverApplicationsController < ApplicationController
 
   # GET /driver_applications/new
   def new
+    @page = Page.find(1)
     @driver_application = DriverApplication.new
   end
 

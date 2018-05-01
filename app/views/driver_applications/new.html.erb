@@ -1,11 +1,33 @@
-<div class='container'>
-  <br>
 
-  <div class="panel panel-default bg_color">
-    <div class="panel-heading">New Driver Application</div>
-    <div class="panel-body">
-      <%= render 'form', driver_application: @driver_application %>
-      <%= link_to 'Back', driver_applications_path %>
+      
+
+
+<!-- beign #action-box -->
+<div id="action-box" class="content has-bg" data-scrollview="true">
+    <!-- begin content-bg -->
+    <div class="content-bg">
+    
     </div>
+    <!-- end content-bg -->
+    <!-- begin container -->
+    <div class="container" data-animation="true" data-animation-type="fadeInRight">
+      <!-- begin row -->
+      <div class="row action-box">
+        <!-- begin col-9 -->
+        <div class="col-md-12 col-sm-12">
+
+        
+              
+<%= render 'form', driver_application: @driver_application %>
+          
+        </div>
+        <!-- end col-9 -->
+
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
   </div>
-</div>
+  <!-- end #action-box -->
+
+  <%= render "layouts/pages/partials/show/footer" %>
