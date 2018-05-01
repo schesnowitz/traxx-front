@@ -3,7 +3,7 @@ class CreateDriverApplications < ActiveRecord::Migration[5.2]
     create_table :driver_applications do |t|
       t.string :first_name
       t.string :last_name
-      t.string :dob
+      t.date :dob
       t.string :social
       t.string :street
       t.string :city
@@ -17,7 +17,11 @@ class CreateDriverApplications < ActiveRecord::Migration[5.2]
       t.string :color
       t.string :vin
       t.string :mileage
-      t.timestamps
+      t.string :license_number
+      t.string :license_image
+      t.text :notes
+      t.integer :years_experience
+      t.timestamps 
     end
   end
 end  

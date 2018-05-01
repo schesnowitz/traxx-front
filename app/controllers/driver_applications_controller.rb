@@ -87,7 +87,11 @@ class DriverApplicationsController < ApplicationController
       :model,	
       :color,	
       :vin,
-      :mileage
+      :mileage,
+      :license_number,
+      :license_image,
+      :notes,
+      :years_experience
       )
     end
 end

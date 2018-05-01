@@ -81,7 +81,7 @@ ActiveRecord::Schema.define(version: 2018_05_01_042023) do
   create_table "driver_applications", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.string "dob"
+    t.date "dob"
     t.string "social"
     t.string "street"
     t.string "city"
@@ -95,6 +95,10 @@ ActiveRecord::Schema.define(version: 2018_05_01_042023) do
     t.string "color"
     t.string "vin"
     t.string "mileage"
+    t.string "license_number"
+    t.string "license_image"
+    t.text "notes"
+    t.integer "years_experience"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
