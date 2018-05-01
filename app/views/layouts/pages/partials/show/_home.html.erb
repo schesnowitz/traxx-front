@@ -1,5 +1,6 @@
 <!-- begin #home -->
 <div id="home" class="content has-bg home">
+
     <!-- begin content-bg -->
     <div class="content-bg">
       <img src="<%= asset_url "custom/home_truck.jpg" %>" alt="Home" />
@@ -7,6 +8,9 @@
     <!-- end content-bg -->
     <!-- begin container -->
     <div class="container home-content">
+          <div class="container">
+      <%= bootstrap_flash %>
+    </div>
       <h1><%= @page.string1 %></h1>
       <h3><%= @page.string2 %></h3>
       <p>

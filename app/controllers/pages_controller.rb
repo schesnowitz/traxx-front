@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_action :set_page, only: [:show, :edit, :update, :destroy]
+  before_action :set_page, only: [:show, :edit, :update, :destroy, :import]
 
   # GET /pages
   # GET /pages.json
@@ -67,7 +67,7 @@ class PagesController < ApplicationController
 
   def import
     Page.import(params[:file])
-    redirect_to pages_path, notice: 'Loads have been uploaded.'
+    redirect_to @page, notice: 'Page data updated.'
   end 
 
   private
