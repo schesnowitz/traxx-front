@@ -2,7 +2,7 @@
 <div id="action-box" class="content has-bg" data-scrollview="true">
     <!-- begin content-bg -->
     <div class="content-bg">
-      <img src="../assets/img/bg/bg-action.jpg" alt="Action" />
+      <img src="<%= asset_url "img/bg/bg-action.jpg" %>" alt="Action" />
     </div>
     <!-- end content-bg -->
     <!-- begin container -->
@@ -14,15 +14,16 @@
           <div class="icon-large text-theme">
             <i class="fa fa-truck"></i>
           </div>
-          <h3>Wanna Drive?</h3>
-          <p>
-              We know that our professional, independent contractors are what keep our flatbed business rolling. Let Carrier One provide you with all the resources necessary to succeed, starting from your first day in orientation. We’re proud to be 100% committed to be the best place to grow your driving business with starting pay of 80% along with plenty of other benefits and perks.
+          <h3><%= @page.action_box1 %></h3>
+          <p> 
+              
+              <%= @page.action_box2 %>
           </p>
         </div>
         <!-- end col-9 -->
         <!-- begin col-3 -->
         <div class="col-md-3 col-sm-3">
-          <a href="#" class="btn btn-outline btn-block">Apply Here</a>
+          <a href="#" class="btn btn-outline btn-block">Apply Here(steve needs to create)</a>
         </div>
         <!-- end col-3 -->
       </div>

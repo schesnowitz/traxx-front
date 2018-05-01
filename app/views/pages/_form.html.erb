@@ -1,10 +1,12 @@
 
 <%= simple_form_for(@page) do |f| %>
-  <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-      <%= f.input :string1 %>
+
+      <div class="row">
+        <div class="col-sm-4">
+              <%= f.input :string1 %>
       <%= f.input :string2 %>
       <%= f.input :string3 %>
       <%= f.input :string4 %>
@@ -14,7 +16,110 @@
       <%= f.input :string8 %>
       <%= f.input :string9 %>
       <%= f.input :string10 %>
-    <%= f.input :about1 %>
+        </div>
+        <div class="col-sm-4">
+              <%= f.input :string11 %>
+      <%= f.input :string12 %>
+      <%= f.input :string13 %>
+      <%= f.input :string14 %>
+      <%= f.input :string15 %>
+      <%= f.input :string16 %>
+      <%= f.input :string17 %>
+      <%= f.input :string18 %>
+      <%= f.input :string19 %>
+      <%= f.input :string20 %>
+        </div>
+        <div class="col-sm-4">
+              <%= f.input :string21 %>
+      <%= f.input :string22 %>
+      <%= f.input :string23 %>
+      <%= f.input :string24 %>
+      <%= f.input :string25 %>
+      <%= f.input :string26 %>
+      <%= f.input :string27 %>
+      <%= f.input :string28 %>
+      <%= f.input :string29 %>
+      <%= f.input :string30 %>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">      
+        <%= f.input :string31 %>
+      <%= f.input :string32 %>
+      <%= f.input :string33 %>
+      <%= f.input :string34 %>
+      <%= f.input :string35 %>
+      <%= f.input :string36 %>
+      <%= f.input :string37 %>
+      <%= f.input :string38 %>
+      <%= f.input :string39 %>
+      <%= f.input :string40 %></div>
+        <div class="col-sm-4">
+        <%= f.input :string41 %>
+      <%= f.input :string42 %>
+      <%= f.input :string43 %>
+      <%= f.input :string44 %>
+      <%= f.input :string45 %>
+      <%= f.input :string46 %>
+      <%= f.input :string47 %>
+      <%= f.input :string48 %>
+      <%= f.input :string49 %>
+      <%= f.input :string50 %>
+        </div>
+        <div class="col-sm-4">
+             <%= f.input :string51 %>
+      <%= f.input :string52 %>
+      <%= f.input :string53 %>
+      <%= f.input :string54 %>
+      <%= f.input :string55 %>
+      <%= f.input :string56 %>
+      <%= f.input :string57 %>
+      <%= f.input :string58 %>
+      <%= f.input :string59 %>
+      <%= f.input :string60 %>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+              <%= f.input :string61 %>
+      <%= f.input :string62 %>
+      <%= f.input :string63 %>
+      <%= f.input :string64 %>
+      <%= f.input :string65 %>
+      <%= f.input :string66 %>
+      <%= f.input :string67 %>
+      <%= f.input :string68 %>
+      <%= f.input :string69 %>
+      <%= f.input :string70 %></div>
+        <div class="col-sm-4">
+              <%= f.input :string71 %>
+      <%= f.input :string72 %>
+      <%= f.input :string73 %>
+      <%= f.input :string74 %>
+      <%= f.input :string75 %>
+      <%= f.input :string76 %>
+      <%= f.input :string77 %>
+      <%= f.input :string78 %>
+      <%= f.input :string79 %>
+      <%= f.input :string80 %></div>
+        <div class="col-sm-4">
+             <%= f.input :string81 %>
+      <%= f.input :string82 %>
+      <%= f.input :string83 %>
+      <%= f.input :string84 %>
+      <%= f.input :string85 %>
+      <%= f.input :string86 %>
+      <%= f.input :string87 %>
+      <%= f.input :string88 %>
+      <%= f.input :string89 %>
+      <%= f.input :string90 %></div>
+    </div>
+      
+     <div class="row">
+        <div class="col-sm-4">
+            <%= f.input :about1 %>
     <%= f.input :about2 %>
     <%= f.input :about3 %>
     <%= f.input :about4 %>
@@ -23,8 +128,9 @@
     <%= f.input :about7 %>
     <%= f.input :about8 %>
     <%= f.input :about9 %>
-    <%= f.input :about10 %>
-    <%= f.input :about11 %>
+    <%= f.input :about10 %></div>
+        <div class="col-sm-4">
+            <%= f.input :about11 %>
     <%= f.input :about12 %>
     <%= f.input :about13 %>
     <%= f.input :about14 %>
@@ -33,7 +139,16 @@
     <%= f.input :about17 %>
     <%= f.input :about18 %>
     <%= f.input :about19 %>
-    <%= f.input :about20 %>
+    <%= f.input :about20 %></div>
+        <div class="col-sm-4">
+        More inputs here
+        </div>
+    </div>
+
+
+ 
+
+
   </div>
 
   <div class="form-actions">

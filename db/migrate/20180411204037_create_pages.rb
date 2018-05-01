@@ -81,6 +81,65 @@ class CreatePages < ActiveRecord::Migration[5.2]
       t.string :string38
       t.string :string39
       t.string :string40
+      t.string :string41
+      t.string :string42
+      t.string :string43
+      t.string :string44
+      t.string :string45
+      t.string :string46
+      t.string :string47
+      t.string :string48
+     
+      t.string :string49
+      t.string :string50
+      t.string :string51
+      t.string :string52
+      t.string :string53
+      t.string :string54
+      t.string :string55
+      t.string :string56
+      t.string :string57
+      t.string :string58
+      t.string :string59
+      t.string :string60
+      t.string :string61
+      t.string :string62
+      t.string :string63
+      t.string :string64
+      t.string :string65
+      t.string :string66
+      t.string :string67
+      t.string :string68
+      t.string :string69
+      t.string :string70
+      t.string :string71
+      t.string :string72
+      t.string :string73
+      t.string :string74
+      t.string :string75
+      t.string :string76
+      t.string :string77
+      t.string :string78
+      t.string :string79
+      t.string :string80
+      t.string :string81
+      t.string :string82
+      t.string :string83
+      t.string :string84
+      t.string :string85
+      t.string :string86
+      t.string :string87
+      t.string :string88
+      t.string :string89
+      t.string :string90
+
+
+
+
+
+      t.string :action_box_image
+      t.string :action_box1
+      t.string :action_box2
 
       t.timestamps
     end

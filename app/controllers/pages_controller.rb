@@ -5,7 +5,11 @@ class PagesController < ApplicationController
   # GET /pages.json
   def index
     @pages = Page.all
-  end
+    respond_to do |format|
+      format.html
+      format.csv { send_data @pages.as_csv }  
+    end
+  end 
 
   # GET /pages/1
   # GET /pages/1.json
@@ -60,6 +64,11 @@ class PagesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def import
+    Page.import(params[:file])
+    redirect_to pages_path, notice: 'Loads have been uploaded.'
+  end 
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -149,7 +158,62 @@ class PagesController < ApplicationController
         :string37,
         :string38,
         :string39,
-        :string40
+        :string40,
+        :string41,
+        :string42,
+        :string43,
+        :string44,
+        :string45,
+        :string46,
+        :string47,
+        :string48,
+       
+        :string49,
+        :string50,
+        :string51,
+        :string52,
+        :string53,
+        :string54,
+        :string55,
+        :string56,
+        :string57,
+        :string58,
+        :string59,
+        :string60,
+        :string61,
+        :string62,
+        :string63,
+        :string64,
+        :string65,
+        :string66,
+        :string67,
+        :string68,
+        :string69,
+        :string70,
+        :string71,
+        :string72,
+        :string73,
+        :string74,
+        :string75,
+        :string76,
+        :string77,
+        :string78,
+        :string79,
+        :string80,
+        
+        :string81,
+        :string82,
+        :string83,
+        :string84,
+        :string85,
+        :string86,
+        :string87,
+        :string88,
+        :string89,
+        :string90,
+        :action_box_image,
+        :action_box1,
+        :action_box2,
         )
     end
 end

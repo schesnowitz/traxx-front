@@ -72,7 +72,37 @@ class AppSettingsController < ApplicationController
     def app_setting_params
       params.require(:app_setting).permit(
         :tab_name,
-        :navbar_style
+        :navbar_style,
+        :string1,
+        :string2,
+        :string3,
+        :string4,
+        :string5,
+        :string6,
+        :string7,
+        :string8,
+        :string9,
+        :string10,
+        :string11,
+        :string12,
+        :string13,
+        :string14,
+        :string15,
+        :string16,
+        :string17,
+        :string18,
+        :string19,
+        :string20,
+        :integer1,
+        :integer2,
+        :integer3,
+        :integer4,
+        :integer5,
+        :boolean1,
+        :boolean2,
+        :boolean3,
+        :boolean4,
+        :boolean5
         )
     end
 end
