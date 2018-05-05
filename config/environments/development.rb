@@ -63,16 +63,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   
 
-  ActionMailer::Base.smtp_settings = {
-    address:                  'smtp.zoho.com',
-    port:                     587,
-    authentication:           :plain,
-    enable_starttls_auto:     true, 
-    user_name:                'support@traxxtransport.com',  
-    password:                 '!SteveChesnowitz',  
-    domain:                   'traxxtransport.com' 
 
-  }
 end
 # 'smtp.zoho.com'
 
