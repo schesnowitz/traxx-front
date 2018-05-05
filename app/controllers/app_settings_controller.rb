@@ -65,7 +65,7 @@ class AppSettingsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_app_setting
-      @app_setting = AppSetting.find(params[:id])
+      @app_setting = AppSetting.find(1)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
@@ -73,15 +73,15 @@ class AppSettingsController < ApplicationController
       params.require(:app_setting).permit(
         :tab_name,
         :navbar_style,
-        :string1,
-        :string2,
-        :string3,
-        :string4,
-        :string5,
-        :string6,
-        :string7,
-        :string8,
-        :string9,
+        :to_email1,
+        :to_email2,
+        :to_email3,
+        :from_email,
+        :name,
+        :street,
+        :city,
+        :state,
+        :postal,
         :string10,
         :string11,
         :string12,

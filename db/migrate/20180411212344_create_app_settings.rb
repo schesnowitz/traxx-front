@@ -3,15 +3,15 @@ class CreateAppSettings < ActiveRecord::Migration[5.2]
     create_table :app_settings do |t|
       t.string :tab_name
       t.string :navbar_style
-      t.string :string1
-      t.string :string2
-      t.string :string3
-      t.string :string4
-      t.string :string5
-      t.string :string6
-      t.string :string7
-      t.string :string8
-      t.string :string9
+      t.string :to_email1
+      t.string :to_email2
+      t.string :to_email3
+      t.string :from_email
+      t.string :name
+      t.string :street
+      t.string :city
+      t.string :state
+      t.string :postal
       t.string :string10
       t.string :string11
       t.string :string12

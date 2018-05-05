@@ -39,7 +39,7 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Store uploaded files on the local file system (see config/storage.yml for options)
-  config.active_storage.service = :local
+  config.active_storage.service = :amazon
 
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
@@ -93,4 +93,24 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = { host: 'http://traxxtransport.com/'} 
+
+
+
+
+  config.action_mailer.delivery_method = :smtp
+  
+
+  ActionMailer::Base.smtp_settings = {
+    address:                  Rails.application.credentials.dig(:mail, :mail_address),
+    port:                     587, 
+    authentication:           :plain,
+    enable_starttls_auto:     true, 
+    # user_name:                ENV['email_username'],  
+    # password:                 ENV['email_password'],  
+    user_name:                Rails.application.credentials.dig(:mail, :mail_user_name),  
+    password:                 Rails.application.credentials.dig(:mail, :mail_password), 
+    domain:                   'traxxtransport.com' 
+
+  }
+end
 end

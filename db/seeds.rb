@@ -262,6 +262,16 @@ puts page_update.inspect
 
 as_update = AppSetting.find_or_initialize_by(id: 1)
 as_update.tab_name = 'Traxx Transport'
+as_update.to_email1 = "steve@traxxtransport.com" 
+as_update.to_email2 = "mbrancano@traxxtransport.com" 
+as_update.from_email = "support@traxxtransport.com" 
+as_update.name = "Traxx Transport" 
+as_update.street = "street" 
+as_update.city = "city" 
+as_update.state = "state" 
+as_update.postal = "postal" 
+
+
 
 
 as_update.save

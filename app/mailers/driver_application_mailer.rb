@@ -8,6 +8,8 @@ class DriverApplicationMailer < ApplicationMailer
   def new_driver_application(driver_application)
     @driver_application = driver_application
 
-    mail to: "s.chesnowitz@gmail.com", subject: "New Driver Application"
+    # mail to: "s.chesnowitz@gmail.com", subject: "New Driver Application"
+
+    mail(to: ["s.chesnowitz@gmail.com", "mbrancato@traxxtransport.com"], subject: "New Driver Application")
   end
 end

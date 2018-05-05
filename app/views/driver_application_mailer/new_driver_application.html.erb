@@ -9,7 +9,7 @@
 
 <p>
   <strong>DOB:</strong>
-   <%= @driver_application.dob %>
+   <%= @driver_application.dob.strftime("%b %e, %Y") %>
 </p>
 <p>
   <strong>Street:</strong>
@@ -34,6 +34,21 @@
 <p>
   <strong>Email:</strong>
    <%= @driver_application.email %>
+</p>
+
+<p>
+  <strong>License Number:</strong>
+   <%= @driver_application.license_number %>
+</p>
+
+<p>
+  <strong>License Image:</strong>
+  <%= link_to url_for(@driver_application.image), url_for(@driver_application.image) %>
+</p>
+
+<p>
+  <strong>Years of Experience:</strong>
+   <%= @driver_application.years_experience %>
 </p>
 
 <h2>Equipment</h2>

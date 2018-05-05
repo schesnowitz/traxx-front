@@ -11,8 +11,8 @@
 </p>
 
 <p>
-  <strong>Dob:</strong>
-  <%= @driver_application.dob %>
+  <strong>DOB:</strong>
+  <%= @driver_application.dob.strftime("%b %e, %Y") %>
 </p>
 
 <p>
@@ -48,6 +48,16 @@
 <p>
   <strong>Email:</strong>
   <%= @driver_application.email %>
+</p>
+
+<p>
+  <strong>License Image:</strong>
+  <%= @driver_application.image.attached? %>
+</p>
+
+<p>
+  <strong>License Image:</strong>
+  <%= link_to url_for(@driver_application.image), url_for(@driver_application.image) %>
 </p>
 
 <%= link_to 'Edit', edit_driver_application_path(@driver_application) %> |

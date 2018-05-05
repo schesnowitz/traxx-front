@@ -27,6 +27,7 @@ gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap-sass-extras'
 gem 'figaro'
+gem 'aws-sdk-s3', require: false
 
 
 group :development, :test do

@@ -92,7 +92,9 @@ class DriverApplicationsController < ApplicationController
       :license_number,
       :license_image,
       :notes,
-      :years_experience
+      :years_experience,
+      :drivers_license_image,
+      :image
       )
     end
 end
