@@ -28,10 +28,10 @@ class DriverApplicationsController < ApplicationController
   def create
     @page = Page.find(1)
     @driver_application = DriverApplication.new(driver_application_params)
-
+    DriverApplicationMailer.new_driver_application(@driver_application).deliver_now
     respond_to do |format|
       if @driver_application.save
-        format.html { redirect_to @page, notice: 'Driver application was successfully created.' }
+        format.html { redirect_to @page, notice: 'Your application was successfully submitted, We will be in touch soon.' }
         format.json { render :show, status: :created, location: @driver_application }
       else
         format.html { render :new }
