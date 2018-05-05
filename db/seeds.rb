@@ -1,80 +1,80 @@
 
-# user = Admin.create!(
-#   email: 'steve@chesnowitz.com',
-#   password: 'password',
-#   password_confirmation: 'password',
-#   )
-#   puts user.inspect
+user = Admin.create!(
+  email: 'steve@chesnowitz.com',
+  password: 'password',
+  password_confirmation: 'password',
+  )
+  puts user.inspect
 
 
 
 
 
-# page = Page.create!(
-#   :about1 => "1",
-#   :about2 => "2",
-#   :about3 => "3",
-#   :about4 => "4",
-#   :about5 => "5",
-#   :about6 => "6",
-#   :about7 => "7",
-#   :about8 => "8",
-#   :about9 => "9",
-#   :about10 => "10",
-#   :about11 => "11",
-#   :about12 => "12",
-#   :about13 => "13",
-#   :about14 => "14",
-#   :about15 => "15",
-#   :about16 => "16",
-#   :about17 => "17",
-#   :about18 => "18",
-#   :about19 => "19",
-#   :about20 => "20",
-#   :string1 => "string1",
-#   :string2 => "string2",
-#   :string3 => "string3",
-#   :string4 => "string4",
-#   :string5 => "string5",
-#   :string6 => "string6",
-#   :string7 => "string7",
-#   :string8 => "string8",
-#   :string9 => "string9",
-#   :string10 => "string10",
-#   :string11 => "string11",
-#   :string12 => "string12",
-#   :string13 => "string13",
-#   :string14 => "string14",
-#   :string15 => "string15",
-#   :string16 => "string16",
-#   :string17 => "string17",
-#   :string18 => "string18",
-#   :string19 => "string19",
-#   :string20 => "string20",
-#   :string21 => "string21",
-#   :string22 => "string22",
-#   :string23 => "string23",
-#   :string24 => "string24",
-#   :string25 => "string25",
-#   :string26 => "string26",
-#   :string27 => "string27",
-#   :string28 => "string28",
-#   :string29 => "string29",
-#   :string30 => "string30",
-#   :string31 => "string31",
-#   :string32 => "string32",
-#   :string33 => "string33",
-#   :string34 => "string34",
-#   :string35 => "string35",
-#   :string36 => "string36",
-#   :string37 => "string37",
-#   :string38 => "string38",
-#   :string39 => "string39",
-#   :string40 => "string40"
+page = Page.create!(
+  :about1 => "1",
+  :about2 => "2",
+  :about3 => "3",
+  :about4 => "4",
+  :about5 => "5",
+  :about6 => "6",
+  :about7 => "7",
+  :about8 => "8",
+  :about9 => "9",
+  :about10 => "10",
+  :about11 => "11",
+  :about12 => "12",
+  :about13 => "13",
+  :about14 => "14",
+  :about15 => "15",
+  :about16 => "16",
+  :about17 => "17",
+  :about18 => "18",
+  :about19 => "19",
+  :about20 => "20",
+  :string1 => "string1",
+  :string2 => "string2",
+  :string3 => "string3",
+  :string4 => "string4",
+  :string5 => "string5",
+  :string6 => "string6",
+  :string7 => "string7",
+  :string8 => "string8",
+  :string9 => "string9",
+  :string10 => "string10",
+  :string11 => "string11",
+  :string12 => "string12",
+  :string13 => "string13",
+  :string14 => "string14",
+  :string15 => "string15",
+  :string16 => "string16",
+  :string17 => "string17",
+  :string18 => "string18",
+  :string19 => "string19",
+  :string20 => "string20",
+  :string21 => "string21",
+  :string22 => "string22",
+  :string23 => "string23",
+  :string24 => "string24",
+  :string25 => "string25",
+  :string26 => "string26",
+  :string27 => "string27",
+  :string28 => "string28",
+  :string29 => "string29",
+  :string30 => "string30",
+  :string31 => "string31",
+  :string32 => "string32",
+  :string33 => "string33",
+  :string34 => "string34",
+  :string35 => "string35",
+  :string36 => "string36",
+  :string37 => "string37",
+  :string38 => "string38",
+  :string39 => "string39",
+  :string40 => "string40"
 
   
-# )
-# puts page.inspect
+)
+puts page.inspect
 
 
 
@@ -85,11 +85,11 @@
 
 
 
-# app_setting = AppSetting.create!(
+app_setting = AppSetting.create!(
 
-#   tab_name: 'acme_app'
-# )
-# puts app_setting.inspect
+  tab_name: 'acme_app'
+)
+puts app_setting.inspect
 
 
 
@@ -99,11 +99,11 @@ page_update = Page.find_or_initialize_by(id: 1)
 
 
 
-page_update.string1 = 'Under'
-page_update.string2 = 'Construction'
-page_update.string3 = 'come'
-page_update.string4 = 'back'
-page_update.string5 = 'soon'
+page_update.string1 = 'Traxx Transport'
+page_update.string2 = 'Logistics Simplified'
+page_update.string3 = ''
+page_update.string4 = ''
+page_update.string5 = ''
 
 
 page_update.string6 = 'string6'
@@ -145,11 +145,11 @@ page_update.string31 = 'support@traxxtransport.com'
 
 # start counter
 page_update.string32 = '123'
-page_update.string33 = 'This is 123'
+page_update.string33 = '123'
 page_update.string34 = '456'
-page_update.string35 = 'And then 456'
+page_update.string35 = '456'
 page_update.string36 = '789'
-page_update.string37 = 'Now 789'
+page_update.string37 = '789'
 page_update.string38 = '101112'
 page_update.string39 = 'Ten Eleven and twelve'
 # end counter 
@@ -184,10 +184,10 @@ page_update.string60 = 'string60'
 # end team
 
 # start quote
-page_update.string61 = 'string61'
-page_update.string62 = 'string62'
-page_update.string63 = 'string63'
-page_update.string64 = 'string64'
+page_update.string61 = 'Drivers'
+page_update.string62 = 'Are'
+page_update.string63 = 'Number One Asset'
+page_update.string64 = 'Something Else Here'
 
 # end quote
 
