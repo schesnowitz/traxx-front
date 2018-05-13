@@ -6,15 +6,15 @@ class CreateAppSettings < ActiveRecord::Migration[5.2]
       t.string :to_email1
       t.string :to_email2
       t.string :to_email3
-      t.string :from_email
+      t.string :from_email 
       t.string :name
       t.string :street
       t.string :city
       t.string :state
       t.string :postal
-      t.string :string10
-      t.string :string11
-      t.string :string12
+      t.string :phone
+      t.string :fax
+      t.string :email
       t.string :string13
       t.string :string14
       t.string :string15

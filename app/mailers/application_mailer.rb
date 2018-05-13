@@ -1,4 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'support@traxxtransport.com'
+  @app_setting = AppSetting.find(1)
+  default from: @app_setting.from_email
   layout 'mailer'
 end

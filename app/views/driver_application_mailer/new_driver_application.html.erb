@@ -43,7 +43,11 @@
 
 <p>
   <strong>License Image:</strong>
+  <% if @driver_application.image.attached? %>
   <%= link_to url_for(@driver_application.image), url_for(@driver_application.image) %>
+  <% else %>
+  No Image
+  <% end %>
 </p>
 
 <p>

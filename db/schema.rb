@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_05_194258) do
+ActiveRecord::Schema.define(version: 2018_05_06_003716) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,47 +36,21 @@ ActiveRecord::Schema.define(version: 2018_05_05_194258) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
-  create_table "admins", force: :cascade do |t|
-    t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer "sign_in_count", default: 0, null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.inet "current_sign_in_ip"
-    t.inet "last_sign_in_ip"
-    t.string "confirmation_token"
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
-    t.string "unconfirmed_email"
-    t.integer "failed_attempts", default: 0, null: false
-    t.string "unlock_token"
-    t.datetime "locked_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["confirmation_token"], name: "index_admins_on_confirmation_token", unique: true
-    t.index ["email"], name: "index_admins_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
-    t.index ["unlock_token"], name: "index_admins_on_unlock_token", unique: true
-  end
-
   create_table "app_settings", force: :cascade do |t|
     t.string "tab_name"
     t.string "navbar_style"
-    t.string "string1"
-    t.string "string2"
-    t.string "string3"
-    t.string "string4"
-    t.string "string5"
-    t.string "string6"
-    t.string "string7"
-    t.string "string8"
-    t.string "string9"
-    t.string "string10"
-    t.string "string11"
-    t.string "string12"
+    t.string "to_email1"
+    t.string "to_email2"
+    t.string "to_email3"
+    t.string "from_email"
+    t.string "name"
+    t.string "street"
+    t.string "city"
+    t.string "state"
+    t.string "postal"
+    t.string "phone"
+    t.string "fax"
+    t.string "email"
     t.string "string13"
     t.string "string14"
     t.string "string15"
@@ -260,6 +234,24 @@ ActiveRecord::Schema.define(version: 2018_05_05_194258) do
     t.string "action_box2"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.boolean "is_admin", default: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet "current_sign_in_ip"
+    t.inet "last_sign_in_ip"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end

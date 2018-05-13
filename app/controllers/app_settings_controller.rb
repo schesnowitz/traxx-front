@@ -1,10 +1,12 @@
 class AppSettingsController < ApplicationController
   before_action :set_app_setting, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, :admin_only
   layout "pages"
 
   # GET /app_settings
   # GET /app_settings.json
   def index
+    the_back
     @app_settings = AppSetting.all
   end
 
@@ -82,9 +84,9 @@ class AppSettingsController < ApplicationController
         :city,
         :state,
         :postal,
-        :string10,
-        :string11,
-        :string12,
+        :phone,
+        :fax,
+        :email,
         :string13,
         :string14,
         :string15,

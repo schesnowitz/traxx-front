@@ -12,12 +12,27 @@
       </li> -->
       <li><a href="#home" data-click="scroll-to-target">HOME</a></li>
       <li><a href="#about" data-click="scroll-to-target">ABOUT</a></li>
+      <li><a href="#action-box" data-click="scroll-to-target">DRIVE</a></li>
       <!--<li><a href="#team" data-click="scroll-to-target">TEAM</a></li>-->
       <li><a href="#service" data-click="scroll-to-target">SERVICES</a></li>
       <!--<li><a href="#work" data-click="scroll-to-target">WORK</a></li>-->
-      <li><a href="#client" data-click="scroll-to-target">CLIENT</a></li>
+      <!--<li><a href="#client" data-click="scroll-to-target">CLIENT</a></li>-->
       <!-- <li><a href="#pricing" data-click="scroll-to-target">PRICING</a></li> -->
       <li><a href="#contact" data-click="scroll-to-target">CONTACT</a></li>
+      <% if current_user.try(:is_admin? ) %>
+  
+
+        <li class="active dropdown">
+        <a href="#home" data-click="scroll-to-target" data-toggle="dropdown">user <b class="caret"></b></a>
+        <ul class="dropdown-menu dropdown-menu-left animated fadeInDown">
+          <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to "App Settings", edit_app_setting_path(@app_setting) %></li>
+          <li><%= link_to "Edit Page", edit_page_path(@page) %></li>
+          <li><%= link_to "Edit Profile", edit_user_registration_path(@user) %></li>
+          <li><a href="#">Extra Element</a></li>
+        </ul>
+      </li>
+      <% end %>
     </ul>
   </div>
   <!-- end navbar-collapse -->

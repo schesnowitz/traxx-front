@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy, :import]
-
+  before_action :authenticate_user!, except: [:show]
+  before_action :admin_only, except: [:show]
+  
   # GET /pages
   # GET /pages.json
   def index

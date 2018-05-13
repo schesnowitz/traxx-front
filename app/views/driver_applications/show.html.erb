@@ -57,7 +57,11 @@
 
 <p>
   <strong>License Image:</strong>
+  <% if @driver_application.image.attached? %>
   <%= link_to url_for(@driver_application.image), url_for(@driver_application.image) %>
+  <% else %>
+  <%= @driver_application.image.attached? %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_driver_application_path(@driver_application) %> |
