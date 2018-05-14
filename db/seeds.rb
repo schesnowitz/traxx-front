@@ -1,19 +1,19 @@
 
-# user = User.create!(
-#   email: 'steve@traxxtransport.com',
-#   password: 'password',
-#   password_confirmation: 'password',
-#   is_admin: true
-#   )
-#   puts user.inspect
+user = User.create!(
+  email: 'steve@traxxtransport.com',
+  password: 'password',
+  password_confirmation: 'password',
+  is_admin: true
+  )
+  puts user.inspect
 
-#   user = User.create!(
-#   email: 'mbrancato@traxxtransport.com',
-#   password: 'password',
-#   password_confirmation: 'password',
-#   is_admin: true
-#   )
-#   puts user.inspect
+  user = User.create!(
+  email: 'mbrancato@traxxtransport.com',
+  password: 'password',
+  password_confirmation: 'password',
+  is_admin: true
+  )
+  puts user.inspect
 
 
 
@@ -78,16 +78,16 @@ page_update.string20 = 'Under'
 
 # start contact 
 page_update.string21 = 'Let\'s Talk'
-page_update.string22 = 'Some text here'
-page_update.string23 = 'If you have a project you would like to discuss, get in touch with us.'
-page_update.string24 = 'Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus.'
-page_update.string25 = 'string25'
+page_update.string22 = 'We look forward to hearing from you!'
+page_update.string23 = ''
+page_update.string24 = ''
+page_update.string25 = ''
 
 page_update.string26 = 'Traxx Transport, LLC'
 page_update.string27 = '16133 Martin Road'
 page_update.string28 = 'Roseville, MI 48066'
-page_update.string29 = 'P:(586) 435-0044'
-page_update.string30 = 'F: 444.555.6666'
+page_update.string29 = 'Phone | Fax: (586) 435-0044'
+page_update.string30 = ''
 
 page_update.string31 = 'support@traxxtransport.com'
 
@@ -106,7 +106,7 @@ page_update.string39 = 'Ten Eleven and twelve'
 
 # start foot 
 page_update.string40 = 'string40'
-page_update.string41 = 'string41'
+page_update.string41 = 'facebook.com/Traxx-Transport-160563797980773'
 page_update.string42 = 'string42'
 page_update.string43 = 'string43'
 page_update.string44 = 'string44'
@@ -134,7 +134,7 @@ page_update.string60 = 'string60'
 # end team
 
 # start quote
-page_update.string61 = 'Drivers'
+page_update.string61 = 'Drivers -'
 page_update.string62 = ''
 page_update.string63 = 'Our Greatest Asset'
 page_update.string64 = 'Our goal is to establish a strong,
@@ -147,9 +147,9 @@ allow us to grow with you.'
 # start service 
 
 
-page_update.string65 = 'string65'
-page_update.string66 = 'string66'
-page_update.string67 = 'string67'
+page_update.string65 = 'Trucking'
+page_update.string66 = 'It\'s what we do.'
+page_update.string67 = ''
 page_update.string68 = 'A single-source solution serving 48 contiguous states and Canada.'
 page_update.string69 = 'From origin to destination, we transport full truckloads without intermediate stops or handling throughout the U.S. and Canada, employing the latest technology and customized support services.'
 page_update.string70 = 'Keep up to date with your shipments with instant tracking.'
