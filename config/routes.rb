@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :incoming_contacts
   resources :driver_applications
   resources :app_settings
   devise_for :users

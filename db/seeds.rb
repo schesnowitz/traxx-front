@@ -161,7 +161,7 @@ page_update.string75 = 'From day one, safety has been the highest priority at Tr
 page_update.string76 = 'Support'
 page_update.string77 = 'We understand the concerns of both brokers and Shippers, we are uniquely positioned to support your needs.'
 page_update.string78 = 'Timing'
-page_update.string79 = 'We understand the critical nature of each shipment and the importance of delivering on time – every time. No matter your daily transportation needs, Rush Trucking will develop effective and efficient solutions customized to your unique situation.'
+page_update.string79 = 'We understand the critical nature of each shipment and the importance of delivering on time – every time. No matter your daily transportation needs, Traxx Transport will develop effective and efficient solutions customized to your unique situation.'
 page_update.string80 = 'string80'
 
 page_update.string81 = 'string81'
@@ -177,8 +177,8 @@ page_update.string90 = 'string90'
 
 
 page_update.about1 = 'About Traxx Transport, LLC'
-page_update.about2 = 'Our Most Important Asset'
-page_update.about3 = 'Period.'
+page_update.about2 = 'Where Drivers Matter'
+page_update.about3 = ''
 page_update.about4 = 'The Story'
 page_update.about5 = 'We take driver recruitment, development and retention very seriously at Traxx Transport as they represent not only us, but your company as well. Traxx Transport is constantly recruiting in traditional and new ways to ensure we attract drivers with the most desirable and sought-after skills and temperament, those focused on safety and customer service.'
 
