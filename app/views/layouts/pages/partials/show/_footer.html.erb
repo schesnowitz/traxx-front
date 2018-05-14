@@ -12,7 +12,11 @@
         <%= @page.string47 %> <a href="<%= @page.string40 %>"><%= @page.string48 %></a>
       </p>
       <p class="social-list">
-        <a href="<%= @page.string41 %>"target="_blank"><i class="fab fa-facebook-square fa-fw"></i></a>
+
+
+        <%= link_to "http://#{@page.string41}", target: :_blank do %> 
+        <i class="fab fa-facebook-square fa-fw"></i> 
+        <% end %>
         <a href="<%= @page.string42 %>"><i class="fab fa-instagram fa-fw"></i></a>
         <a href="<%= @page.string43 %>"><i class="fab fa-twitter-square fa-fw"></i></a>
         <a href="<%= @page.string44 %>"><i class="fab fa-google-plus-square fa-fw"></i></a>

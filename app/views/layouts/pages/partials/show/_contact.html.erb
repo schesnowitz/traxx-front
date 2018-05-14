@@ -1,4 +1,5 @@
-<!-- begin #contact -->
+
+  <!-- begin #contact -->
 <div id="contact" class="content bg-silver-lighter" data-scrollview="true">
     <!-- begin container -->
     <div class="container">
@@ -28,10 +29,11 @@
         </div>
         <!-- end col-6 -->
         <!-- begin col-6 -->
+        <%= simple_form_for @incoming_contact do |ic| %>
+
         <div class="col-md-6 form-col" data-animation="true" data-animation-type="fadeInRight">
-          
+          <form class="form-horizontal">
             <div class="form-group">
-            <%= simple_form_for @incoming_contact do |ic| %>
               <label class="control-label col-md-3">Name <span class="text-theme">*</span></label>
               <div class="col-md-9">
                 <%= ic.input :name, label: false %>
@@ -53,11 +55,12 @@
               <label class="control-label col-md-3"></label>
               <div class="col-md-9 text-left">
               <%= ic.submit "Send Message", class: "btn btn-theme btn-block" %>
-
-                <% end %>
               </div>
-                  </div>
+            </div>
+          </form>
+        </div>
         <!-- end col-6 -->
+        <% end %>
       </div>
       <!-- end row -->
     </div>
