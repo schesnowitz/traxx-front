@@ -5,7 +5,7 @@
 <div class="panel panel-info">
   <div class="panel-heading">Terms of Use</div>
     <div class="panel-body">
-      <%= @app_setting.terms.html_safe %> 
+      <%= raw(@app_setting.terms) %>
     </div>
   </div>
 </div>

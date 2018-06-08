@@ -5,7 +5,7 @@
 <div class="panel panel-info">
   <div class="panel-heading">Terms and Conditions of Use</div>
     <div class="panel-body">
-      <%= @app_setting.privacy.html_safe %> 
+      <%= raw(@app_setting.privacy) %> 
     </div>
   </div>
 </div>
