@@ -104,7 +104,9 @@ class AppSettingsController < ApplicationController
         :boolean2,
         :boolean3,
         :boolean4,
-        :boolean5
+        :boolean5,
+        :terms,
+        :conditions
         )
     end
 end

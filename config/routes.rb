@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :posts
   resources :incoming_contacts
   resources :driver_applications
   resources :app_settings

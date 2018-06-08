@@ -73,6 +73,12 @@ class PagesController < ApplicationController
     redirect_to @page, notice: 'Page data updated.'
   end 
 
+  def terms
+  end
+
+  def conditions
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_page
