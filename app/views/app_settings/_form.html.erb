@@ -1,4 +1,5 @@
 
+<%= tinymce_assets %><%= tinymce %>
 <%= simple_form_for(@app_setting) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
@@ -17,7 +18,10 @@
     <%= f.input :phone %>
     <%= f.input :fax %>
     <%= f.input :email %>
-
+    <label for="">Terms</label>
+    <%= f.text_area :terms, class: "tinymce", :rows => 20, :cols => 40 %>
+    <label for="">Privacy</label>
+    <%= f.text_area :privacy, class: "tinymce", :rows => 20, :cols => 40 %>
 
   </div>
 

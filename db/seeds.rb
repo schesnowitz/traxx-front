@@ -3,7 +3,8 @@ user = User.create!(
   email: 'steve@traxxtransport.com',
   password: 'password',
   password_confirmation: 'password',
-  is_admin: true
+  is_admin: true,
+  username: "Stephen Chesnowitz"
   )
   puts user.inspect
 
@@ -11,20 +12,21 @@ user = User.create!(
   email: 'mbrancato@traxxtransport.com',
   password: 'password',
   password_confirmation: 'password',
-  is_admin: true
+  is_admin: true,
+  username: "Michael Brancato" 
   )
   puts user.inspect
 
 
 
 
-# page = Page.create!(
-#   :about1 => "1",
-#   :about2 => "2"
+page = Page.create!(
+  :about1 => "1",
+  :about2 => "2"
 
   
-# )
-# puts page.inspect
+)
+puts page.inspect
 
 
 
@@ -35,11 +37,11 @@ user = User.create!(
 
 
 
-# app_setting = AppSetting.create!(
+app_setting = AppSetting.create!(
 
-#   tab_name: 'acme_app'
-# )
-# puts app_setting.inspect
+  tab_name: 'acme_app'
+)
+puts app_setting.inspect
 
 
 

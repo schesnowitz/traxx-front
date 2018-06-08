@@ -28,6 +28,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap-sass-extras'
 gem 'figaro'
 gem 'aws-sdk-s3', require: false
+gem 'tinymce-rails', '~> 4.7', '>= 4.7.13'
+gem 'image_processing', '~> 1.2'
 
 
 group :development, :test do

@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
-  before_action :set_page, only: [:show, :edit, :update, :destroy, :import]
-  before_action :authenticate_user!, except: [:show]
-  before_action :admin_only, except: [:show]
+  before_action :set_page, only: [:show, :edit, :update, :destroy, :import, :privacy, :terms]
+  before_action :authenticate_user!, except: [:show, :privacy, :terms]
+  before_action :admin_only, except: [:show, :privacy, :terms]
   
   # GET /pages
   # GET /pages.json
@@ -76,7 +76,7 @@ class PagesController < ApplicationController
   def terms
   end
 
-  def conditions
+  def privacy
   end
 
   private

@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   end
   root to: "pages#show"
   resources :pages do
-    collection {post :import}
+    collection {post :import} 
   end
+
+  get 'terms', to: 'pages#terms'
+  get 'privacy', to: 'pages#privacy'
 end

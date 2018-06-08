@@ -10,13 +10,8 @@
           <li><a href="#">Extra Element</a></li>
         </ul>
       </li> -->
-      <li><a href="#home" data-click="scroll-to-target">HOME</a></li>
-      <li><a href="#about" data-click="scroll-to-target">ABOUT</a></li>
-      <li><a href="#action-box" data-click="scroll-to-target">DRIVE</a></li>
-      <!--<li><a href="#team" data-click="scroll-to-target">TEAM</a></li>-->
-      <li><a href="#service" data-click="scroll-to-target">SERVICES</a></li>
+      <li><%= link_to "HOME", root_path %></li>
       <li><%= link_to "ARTICLES", posts_path %></li>
-      <li><a href="#contact" data-click="scroll-to-target">CONTACT</a></li>
       <% if current_user.try(:is_admin? ) %>
   
 
@@ -27,7 +22,7 @@
           <li><%= link_to "App Settings", edit_app_setting_path(@app_setting) %></li>
           <li><%= link_to "Edit Page", edit_page_path(@page) %></li>
           <li><%= link_to "Edit Profile", edit_user_registration_path(@user) %></li>
-          <li><a href="#">Extra Element</a></li>
+          <li><%= link_to "Posts", posts_path %></li>
         </ul>
       </li>
       <% end %>

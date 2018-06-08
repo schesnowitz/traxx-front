@@ -106,7 +106,7 @@ class AppSettingsController < ApplicationController
         :boolean4,
         :boolean5,
         :terms,
-        :conditions
+        :privacy
         )
     end
 end
