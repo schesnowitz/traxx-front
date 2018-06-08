@@ -30,7 +30,7 @@ gem 'figaro'
 gem 'aws-sdk-s3', require: false
 gem 'tinymce-rails', '~> 4.7', '>= 4.7.13'
 gem 'image_processing', '~> 1.2'
-
+gem 'kaminari'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,45 +1,41 @@
-
 <%= render "layouts/pages/partials/show/header" %>
 <%= render "layouts/pages/partials/show/navbar2" %>   
 <br><br><br><br><br>
 
-
-
 <div class="container">
-<% @posts.each do |post| %>
+<%= paginate @posts %>
+  <% @posts.each do |post| %>
   <div class="well">
-      <div class="media">
-      	<span class="pull-left">
-        <% if post.image1.attached? %>
+    <div class="media">
+      <%= link_to post do %>
+      <span class="pull-left">
+      <% if post.image1.attached? %>
       <%= image_tag post.image1.variant(resize: "150x150"), class:"img-fluid rounded" %>
       <% else %>
       <img class="img-fluid rounded" src="http://placekitten.com/150/150" alt="">
       <% end %>
-    		
-  		</span>
-  		<div class="media-body">
-    		<h4 class="media-heading"><%= post.title %></h4>
-          <p class="text-right"><%= post.user.username %></p>
-          <p><%= post.body.html_safe %></p>
-          <ul class="list-inline list-unstyled">
-  			<li><span><i class="glyphicon glyphicon-calendar"></i> 
-        Posted <%= time_ago_in_words(post.created_at) %> ago</span></li>
-<% if current_user.try(:is_admin?) %> 
-                   <p><%= link_to 'Show', post %></span>
-        <span><%= link_to 'Edit', edit_post_path(post) %></span>
-        <span><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></span>
-        
-        <% end %>
-         
-
-			</ul>
- 
-  </div>
-  
+      <% end %>
+      </span>
+      <div class="media-body">
+        <h3 class="media-heading">  <%= link_to post.title, post %></h3>
+        <p class="text-right">Posted By: <%= post.user.username %></p>
+        <p><% raw(post.body.truncate(27)) %></p>
+        <ul class="list-inline list-unstyled">
+          <li><span><i class="glyphicon glyphicon-calendar"></i> 
+            Posted <%= time_ago_in_words(post.created_at) %> ago</span>
+          </li>
+          <% if current_user.try(:is_admin?) %> 
+          <span><%= link_to 'Show', post %></span>
+          <span><%= link_to 'Edit', edit_post_path(post) %></span>
+          <span><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+          <% end %>
+        </ul>
+      </div>
     </div>
   </div>
+  
   <% end %>
+  <%= paginate @posts %>
   <%= link_to 'New Post', new_post_path if current_user.try(:is_admin?) %>
 </div>
-
-<%= render "layouts/pages/partials/show/footer" %> 
+<%= render "layouts/pages/partials/show/footer" %>
