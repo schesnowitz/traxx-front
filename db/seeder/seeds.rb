@@ -231,6 +231,7 @@ as_update.email = "support@traxxtransport.com"
 
 as_update.save
 puts as_update.inspect
+
 200.times do
 post = Post.create!(
   title: Faker::Beer.name,
